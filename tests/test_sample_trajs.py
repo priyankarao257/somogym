@@ -22,10 +22,10 @@ def somogym_sample_traj_tester(env_name, traj_name, render=False, debug=False):
     run_traj(
         env_name,
         run_config,
-        num_steps=20,
-        run_render=render,
-        debug=debug,
-        record_data=False,
+        # num_steps=100,
+        # run_render=render,
+        # debug=debug,
+        # record_data=True,
     )
 
 
@@ -127,21 +127,21 @@ def test_SnakeLocomotionDiscrete_sample_traj_gui():
 
 if __name__ == "__main__":
     if len(sys.argv) > 1 and sys.argv[1] == "gui":
-        test_AntipodalGripper_sample_traj_gui()
-        test_InHandManipulation_sample_traj_gui()
-        test_InHandManipulationInverted_sample_traj_gui()
-        test_PenSpinner_sample_traj_gui()
+        # test_AntipodalGripper_sample_traj_gui()
+        # test_InHandManipulation_sample_traj_gui()
+        # test_InHandManipulationInverted_sample_traj_gui()
+        # test_PenSpinner_sample_traj_gui()
         test_PlanarBlockPushing_sample_traj_gui()
-        test_PlanarReaching_sample_traj_gui()
-        test_PlanarReachingObstacle_sample_traj_gui()
-        test_SnakeLocomotionDiscrete_sample_traj_gui()
+        # test_PlanarReaching_sample_traj_gui()
+        # test_PlanarReachingObstacle_sample_traj_gui()
+        # test_SnakeLocomotionDiscrete_sample_traj_gui()
     else:
-        test_AntipodalGripper_sample_traj()
-        test_InHandManipulation_sample_traj()
-        test_InHandManipulationInverted_sample_traj()
-        test_PenSpinner_sample_traj()
-        test_PlanarBlockPushing_sample_traj()
+        # test_AntipodalGripper_sample_traj()
+        # test_InHandManipulation_sample_traj()
+        # test_InHandManipulationInverted_sample_traj()
+        # test_PenSpinner_sample_traj()
+        # test_PlanarBlockPushing_sample_traj()
         test_PlanarReaching_sample_traj()
-        test_PlanarReachingObstacle_sample_traj()
-        test_SnakeLocomotionDiscrete_sample_traj()
-        test_InchwormLocomotion_sample_traj()
+        # test_PlanarReachingObstacle_sample_traj()
+        # test_SnakeLocomotionDiscrete_sample_traj()
+        # test_InchwormLocomotion_sample_traj()

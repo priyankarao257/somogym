@@ -2,7 +2,7 @@ import sys
 
 from gym.envs.registration import register
 
-default_max_episode_steps = 100
+default_max_episode_steps = 10000
 
 register(
     id="PlanarBlockPushing-v0",

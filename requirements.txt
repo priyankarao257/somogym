@@ -1,4 +1,4 @@
-gym>=0.26.0
+gym>=0.25.0
 pybullet==3.1.7
 sorotraj==0.14
 somo @ git+https://github.com/graulem/somo@d65eaf19336898139a5a80a0e5f59d2bedbebfe9

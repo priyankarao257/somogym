@@ -408,7 +408,7 @@ class PlanarReaching(SomoEnv.SomoEnv):
             opt_str += " --width=%d --height=%d" % (cam_width, cam_height)
 
         cam_distance, cam_yaw, cam_pitch, cam_xyz_target = (
-            8.0,
+            10.0,
             90.0,
             0.0,
             [0.0, 0.0, 5],

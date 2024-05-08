@@ -2,7 +2,7 @@
 
   <link name="obstacle">
 		<visual>
-		    <origin xyz="0 0 0." rpy="0 1.57079632679 0"/>
+		    <origin xyz="0.3 0.5 0." rpy="0 1.57079632679 0"/>
 			<geometry>
   		       <cylinder radius="1" length="3"/>
 			</geometry>
@@ -11,7 +11,7 @@
 	     	</material>
 		</visual>
 	  <collision>
-		    <origin xyz="0 0 0." rpy="0 1.57079632679 0"/>
+		    <origin xyz="0.3 0.5 0." rpy="0 1.57079632679 0"/>
 			<geometry>
   		       <cylinder radius="1" length="3"/>
 			</geometry>
@@ -22,4 +22,28 @@
     </inertial>
   </link>
 
+</robot>
+
+<robot name="obstacle_2">
+	<link name="obstacle_2">
+		<visual>
+			<origin xyz="0.8 0.5 0." rpy="0 1.57079632679 0"/>
+			<geometry>
+				<cylinder radius="1" length="3"/>
+			</geometry>
+			<material name="anotherOne">
+				<color rgba="0.72156862745 0 0 1.0"/>
+			</material>
+		</visual>
+		<collision>
+			<origin xyz="0.8 0.5 0." rpy="0 1.57079632679 0"/>
+			<geometry>
+				<cylinder radius="1" length="3"/>
+			</geometry>
+		</collision>
+			<inertial>
+			<mass value="0.00000"/>
+		<inertia ixx=".000" ixy="0.0000" ixz="0" iyy=".000" iyz="0.0" izz=".0"/>
+	</inertial>
+	</link>
 </robot>

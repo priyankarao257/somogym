@@ -111,7 +111,7 @@ base_definition:
   dimensions:      [1,2,1.0]
   mass:            0.00294
   inertial_values: [0.0152488, 0, 0, 0.0152488, 0, 0.0152488]
-  material_color:  [0.10980392156862745, 0.3843137254901961, 0.8431372549019608, 1.0]
+  material_color:  [0., 0., 0., 0.0]
   material_name:   "navyblue"
 
 
@@ -121,5 +121,5 @@ tip_definition:
   dimensions:      [1,1,0.25]
   mass:            0.00294
   inertial_values: [0.0152488, 0, 0, 0.0152488, 0, 0.0152488]
-  material_color:  [0.0, 0.2, 0.4, 1.0]
+  material_color:  [0.0, 0.0, 0.0, 0.0]
   material_name:   "midnightblue"

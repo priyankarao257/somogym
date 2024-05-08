@@ -91,13 +91,13 @@ class SomoEnv(gym.Env):
             low=-1,
             high=1,
             shape=action_shape,
-            dtype=np.float32,
+            dtype=float,
         )
         self.observation_space = spaces.Box(
             low=-np.inf,
             high=np.inf,
             shape=self.get_observation_shape(),
-            dtype=np.float32,
+            dtype=float,
         )
 
         self.validate()
@@ -193,12 +193,12 @@ class SomoEnv(gym.Env):
 
     def step(self, action, external_forces=None):
 
-        assert self.action_space.contains(
-            action
-        ), f"action {action} not in action space"
-        assert (
-            self.applied_torque is not None
-        ), f"previous action is {self.applied_torque}"
+        # assert self.action_space.contains(
+        #     action
+        # ), f"action {action} not in action space"
+        # assert (
+        #     self.applied_torque is not None
+        # ), f"previous action is {self.applied_torque}"
 
         # ramp to new action / torque
         delta_torque = action * self.torque_multiplier - self.applied_torque

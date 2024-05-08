@@ -45,7 +45,7 @@ actuator_definitions:
     link_definition:
       shape_type:      "stadium"
       dimensions:      [1.,1.,0.5]
-      mass:            0.00294
+      mass:            0.0029400294
       inertial_values: [0.0152488, 0, 0, 0.0152488, 0, 0.0152488]
       material_color:  [0.0, 0.2, 0.4, 1.0]
       material_name:   "midnightblue"

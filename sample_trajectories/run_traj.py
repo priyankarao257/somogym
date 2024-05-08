@@ -124,16 +124,21 @@ def gen_expert_data(
         logIDvideo = p.startStateLogging(p.STATE_LOGGING_VIDEO_MP4, vid_filename)
 
     for i in range(num_steps):
+        
         applied_action = (
             np.array(traj_actuation_fn(env.step_count * env.action_time))
             / env.torque_multiplier
         )
+        
         restricted_action = np.minimum(
             np.maximum(applied_action, np.array([-1.0] * action_len)),
             np.array([1.0] * action_len),
         )
+        
+        restricted_action[:] = i*-1*0.001
+        print("step",restricted_action)
         _obs, _rewards, _dones, info = env.step(restricted_action)
-
+        print("step", i, applied_action, restricted_action)
         # TODO: seperate record_data functionality into its own file.
         if record_data:
             manipulator_states = env.get_manipulator_states(
